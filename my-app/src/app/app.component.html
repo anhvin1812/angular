@@ -1,0 +1,15 @@
+<!--Top Bar-->
+
+<!--Side Bar-->
+<side-bar [menu]="menu"></side-bar>
+
+<!-- <ul class="sidebar__menu">
+  <li *ngFor="let item of menu" class="sidebar__menu-item"
+      [class.has-sub]="item.menu && item.menu.length > 0">
+      <a [routerLink]="item.link" routerLinkActive="active">
+          <i [class]="item.icon"></i>
+          <span>{{ item.intl ? (item.intl | translate) : item.label }}</span>
+      </a>
+  </li>
+</ul> -->
+<router-outlet></router-outlet>
