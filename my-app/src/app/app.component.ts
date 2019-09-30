@@ -13,9 +13,19 @@ export class AppComponent {
   constructor(){
     this.menu = [
       {
-        link: 'home',
+        link: '',
         intl: 'home',
         label: 'Home'
+      },
+      {
+        link: 'news',
+        intl: 'News',
+        label: 'News'
+      },
+      {
+        link: 'oops',
+        intl: 'oops',
+        label: 'Notfound'
       }
     ]
   }
