@@ -8,7 +8,6 @@ import { SidebarComponent } from './component/side-bar/side-bar.component';
 import { appRoutes } from './app.route';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './page/home/home.component';
-import { NotFoundComponent } from './page/not-found/not-found.component';
 import { NewsModule } from './page/news/news.module';
 
 
@@ -16,7 +15,6 @@ import { NewsModule } from './page/news/news.module';
   declarations: [
     AppComponent,
     HomeComponent,
-    NotFoundComponent,
     SidebarComponent
   ],
   imports: [

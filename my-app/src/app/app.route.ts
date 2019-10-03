@@ -1,6 +1,6 @@
+import { URL_NOT_FOUND, URL_PAGES } from './app.constants';
 import { HomeComponent } from './page/home/home.component';
 import { Routes} from '@angular/router';
-import { NotFoundComponent } from './page/not-found/not-found.component';
 
 export const appRoutes: Routes = [
   {
@@ -9,7 +9,11 @@ export const appRoutes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: URL_PAGES,
+    loadChildren: ()=> import('./page/page/page.module').then(m => m.PageModule),
+  },
+  {
     path: '**',
-    component: NotFoundComponent
+    redirectTo: `${URL_PAGES}/${URL_NOT_FOUND}` 
   }
 ];
