@@ -1,1 +1,0 @@
-import { SidebarComponent } from './side-bar.component';
