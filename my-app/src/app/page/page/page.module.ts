@@ -4,6 +4,7 @@ import { URL_NOT_FOUND } from 'src/app/app.constants';
 import { BlankLayoutComponent } from 'src/app/component/blank-layout/blank-layout.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ThemeModule } from 'src/assets/style/theme/theme.module';
+import { BlankLayoutCardComponent } from 'src/app/component/blank-layout-card/blank-layout-card.component';
 
 const pageRoutes: Routes = [
   { 
@@ -21,6 +22,7 @@ const pageRoutes: Routes = [
 @NgModule({
   declarations:[
     BlankLayoutComponent,
+    BlankLayoutCardComponent,
     NotFoundComponent
   ],
   imports:[
